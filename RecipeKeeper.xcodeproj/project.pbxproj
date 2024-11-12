@@ -14,6 +14,8 @@
 		F0E70B982CE3178600AFDE88 /* RecipeKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70B972CE3178600AFDE88 /* RecipeKeeperTests.swift */; };
 		F0E70BA22CE3178600AFDE88 /* RecipeKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70BA12CE3178600AFDE88 /* RecipeKeeperUITests.swift */; };
 		F0E70BA42CE3178600AFDE88 /* RecipeKeeperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70BA32CE3178600AFDE88 /* RecipeKeeperUITestsLaunchTests.swift */; };
+		F0E70BB12CE31EE700AFDE88 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70BB02CE31EE700AFDE88 /* RecipeCard.swift */; };
+		F0E70BB32CE31FBB00AFDE88 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70BB22CE31FBB00AFDE88 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		F0E70B9D2CE3178600AFDE88 /* RecipeKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0E70BA12CE3178600AFDE88 /* RecipeKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeKeeperUITests.swift; sourceTree = "<group>"; };
 		F0E70BA32CE3178600AFDE88 /* RecipeKeeperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeKeeperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0E70BB02CE31EE700AFDE88 /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		F0E70BB22CE31FBB00AFDE88 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				F0E70B862CE3178300AFDE88 /* RecipeKeeperApp.swift */,
 				F0E70B882CE3178300AFDE88 /* ContentView.swift */,
+				F0E70BB02CE31EE700AFDE88 /* RecipeCard.swift */,
+				F0E70BB22CE31FBB00AFDE88 /* Recipe.swift */,
 				F0E70B8A2CE3178600AFDE88 /* Assets.xcassets */,
 				F0E70B8C2CE3178600AFDE88 /* Preview Content */,
 			);
@@ -259,6 +265,8 @@
 			files = (
 				F0E70B892CE3178300AFDE88 /* ContentView.swift in Sources */,
 				F0E70B872CE3178300AFDE88 /* RecipeKeeperApp.swift in Sources */,
+				F0E70BB12CE31EE700AFDE88 /* RecipeCard.swift in Sources */,
+				F0E70BB32CE31FBB00AFDE88 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
