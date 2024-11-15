@@ -8,15 +8,15 @@
 import Foundation
 
 struct Ingredient {
-    let name: String
-    let quantity: Double
-    let measurement: String?
+    var name: String = "ingredient name"
+    var quantity: Float = 0.0
+    var measurement: String = "measurement"
 }
 
 
-struct Recipe {
-    let id: UInt8
-    let name: String
-    let ingredients: [Ingredient]
-    let steps: [String]
+struct Recipe: Identifiable {
+    var id: UInt8 = 0
+    var name: String = "untitled recipe"
+    var ingredients: [Ingredient] = []
+    var steps: [String] = []
 }

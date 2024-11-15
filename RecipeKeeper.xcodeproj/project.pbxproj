@@ -16,6 +16,7 @@
 		F0E70BA42CE3178600AFDE88 /* RecipeKeeperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70BA32CE3178600AFDE88 /* RecipeKeeperUITestsLaunchTests.swift */; };
 		F0E70BB12CE31EE700AFDE88 /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70BB02CE31EE700AFDE88 /* RecipeCard.swift */; };
 		F0E70BB32CE31FBB00AFDE88 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E70BB22CE31FBB00AFDE88 /* Recipe.swift */; };
+		F0FC72C12CE6C88900C6BBFF /* AmericanTypewriter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = F0FC72C02CE6C88900C6BBFF /* AmericanTypewriter.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F0E70BA32CE3178600AFDE88 /* RecipeKeeperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeKeeperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F0E70BB02CE31EE700AFDE88 /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 		F0E70BB22CE31FBB00AFDE88 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		F0FC72C02CE6C88900C6BBFF /* AmericanTypewriter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = AmericanTypewriter.ttc; path = ../../../../Desktop/AmericanTypewriter.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		F0E70B7A2CE3178300AFDE88 = {
 			isa = PBXGroup;
 			children = (
+				F0FC72BF2CE6C81C00C6BBFF /* ProjectFont */,
 				F0E70B852CE3178300AFDE88 /* RecipeKeeper */,
 				F0E70B962CE3178600AFDE88 /* RecipeKeeperTests */,
 				F0E70BA02CE3178600AFDE88 /* RecipeKeeperUITests */,
@@ -131,6 +134,14 @@
 				F0E70BA32CE3178600AFDE88 /* RecipeKeeperUITestsLaunchTests.swift */,
 			);
 			path = RecipeKeeperUITests;
+			sourceTree = "<group>";
+		};
+		F0FC72BF2CE6C81C00C6BBFF /* ProjectFont */ = {
+			isa = PBXGroup;
+			children = (
+				F0FC72C02CE6C88900C6BBFF /* AmericanTypewriter.ttc */,
+			);
+			path = ProjectFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0E70B8E2CE3178600AFDE88 /* Preview Assets.xcassets in Resources */,
+				F0FC72C12CE6C88900C6BBFF /* AmericanTypewriter.ttc in Resources */,
 				F0E70B8B2CE3178600AFDE88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

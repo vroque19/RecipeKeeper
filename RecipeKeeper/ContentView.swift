@@ -10,12 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var tatoNachos = Recipe(
         id: 1,
-        name: "Sweet Potato Nachos",
         ingredients: [
             Ingredient(name: "ground beef", quantity: 1, measurement: "lbs"),
-            Ingredient(name: "sweet potato", quantity: 1, measurement: nil),
-            Ingredient(name: "yellow onion", quantity: 1, measurement: nil),
-            Ingredient(name: "garlic clove", quantity: 3, measurement: nil)
+            Ingredient(name: "sweet potato", quantity: 1, measurement: ""),
+            Ingredient(name: "yellow onions", quantity: 1, measurement: ""),
+            Ingredient(name: "garlic cloves", quantity: 3, measurement: "")
         ],
         steps: [
             "Wash and peel sweet potatos",
@@ -24,17 +23,34 @@ struct ContentView: View {
             "cooking onions and meat"
         ]
     )
+    let recipes = [Recipe(id: 2, name: "ex1"), Recipe(id: 3, name: "ex2"),
+                   Recipe(
+                        name: "tatonachos",
+                       ingredients: [
+                           Ingredient(name: "ground beef", quantity: 1, measurement: "lbs"),
+                           Ingredient(name: "sweet potato", quantity: 1, measurement: ""),
+                           Ingredient(name: "yellow onions", quantity: 1, measurement: ""),
+                           Ingredient(name: "garlic cloves", quantity: 3, measurement: "")
+                       ],
+                       steps: [
+                           "Wash and peel sweet potatos",
+                           "preheat oven to 400ºF",
+                           "Slice sweet potatoes, place on baking sheet, and bake 25 minutes",
+                           "cooking onions and meat"
+                       ]
+                   )]
     
     var body: some View {
-        NavigationView {
-            VStack {
-                NavigationLink(destination: RecipeCard(recipe: tatoNachos)) {
-                    Text("Show Recipe")
-                }
+        NavigationStack {
+                List(recipes) { recipe in
+                    NavigationLink(destination: RecipeCard(recipe: recipe)) {
+                        Text(recipe.name)
+                    }.foregroundColor(.black).font(Font.custom("AmericanTypewriter", size: 18))
+                } .navigationTitle("My Recipes")
             }
-        } .navigationTitle("Recipe List")
+        }
     }
-}
+
 
 #Preview {
     ContentView()
